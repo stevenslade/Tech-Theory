@@ -10,20 +10,29 @@
 </head>
 
 <body>
+  {{!-- <img src="../../assets/images/094643.png"> --}}
+  {{!-- <img class="backgrndimg" src="{{https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80}}"> --}}
+
+  {{!-- <div id="t" style="display: box">
+    <img class="someClass" src="{{../../assets/images/094643.png}}">
+</div --}}
+
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
+      <h1 class="techhead">
         {{!-- <span role="img" aria-label="money"></span> --}}
         {{!-- This href="/" is taking me back to the mainpage --}}
-        <a href="/">Tech Theory</a>
+        Tech Theory
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
+        <a href="/">Home</a>
+        <a href="/profile">Dashboard</a>
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        {{!-- <a href="/profile">Profile</a> | --}}
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>

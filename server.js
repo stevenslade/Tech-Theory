@@ -14,11 +14,11 @@ const PORT = process.env.PORT || 3001;
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
-//The addition of rolling:true and maxAge was meant to casue the cookie to expire after idel but its not working
+//The addition of rolling:true and maxAge was meant to casue the cookie to expire after idel and it is working, 30000 equals 30 seconds, 300000 equals five minutes.  But nothing happens after the time interval, its just that if you try to do something it takes you back to a login screen
 const sess = {
   secret: 'Super secret secret',
   cookie: {
-    maxAge: 30000
+    maxAge: 300000
   },
   resave: false,
   saveUninitialized: true,
