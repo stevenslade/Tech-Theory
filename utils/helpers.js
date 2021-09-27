@@ -19,4 +19,13 @@ module.exports = {
       return `<span for="img" aria-label="gear">⚙️</span>`;
     }
   },
+  ifeq: (a, b) => {
+     if (a == b) { return true; }
+     return false;
+  },
+  
+  ifnoteq: (a, b, options) => {
+    if (a != b) { return options.fn(this); }
+    return options.inverse(this);
+  }
 };
