@@ -43,6 +43,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
+//trying to set a path for a background image, I think this contradicts line 42
+//app.use(express.static('./views/images'));
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

@@ -32,7 +32,7 @@ Comment.init(
           model: 'project',
           key: 'id',
         },
-      },
+    },
   },
   {
     sequelize,
