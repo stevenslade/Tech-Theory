@@ -28,7 +28,7 @@ A blog site where developers can publish their blog posts and comment on other d
 
 ## <a id="screenshot"></a>Screenshot
 
-![Screenshot of App in use](./assets/images/EDMSS.png)
+![Screenshot of App in use](./assets/images/TTSS.png)
 
 ## <a id="installation"></a>Installation
 
