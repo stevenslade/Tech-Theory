@@ -13,7 +13,7 @@ const newFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/comment');
+      document.location.reload();
     } else {
       alert('Failed to create comment');
     }
@@ -22,4 +22,4 @@ const newFormHandler = async (event) => {
 
 document
   .querySelector('.new-comment-form') //was '.new-comment-form'
-  .addEventListener('submit', newFormHandler());
+  .addEventListener('submit', newFormHandler);
