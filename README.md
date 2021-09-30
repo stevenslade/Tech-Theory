@@ -32,7 +32,7 @@ A blog site where developers can publish their blog posts and comment on other d
 
 ## <a id="installation"></a>Installation
 
-* Run the following to install dependancies, the following will be installed, express, inquirer, mysql2
+* Run the following to install dependancies, the following will be installed, express, inquirer, mysql2, dotenv, 
 
 > npm i
 
@@ -42,7 +42,7 @@ A blog site where developers can publish their blog posts and comment on other d
 
 ## <a id="usage"></a>Usage
 
-* The repo can be forked and then the required modules installed as per above.  The application is run from the command line by entering "node index.js"
+* The repo can be forked and then the required modules installed as per above.  The application is run from the command line by entering "node server.js"
 
 ## <a id="contributing"></a>Contributing
 
@@ -58,6 +58,6 @@ A blog site where developers can publish their blog posts and comment on other d
 
 ## <a id="sample"></a>Visit the App live on Heroku
 
-* [Link to Deployed Application](https://drive.google.com/file/d/1ZTKlxNTM5ye_L0m6QJOW2zQSRtx7HhgY/view)
+* [Link to Deployed Application](https://arcane-forest-46584.herokuapp.com/)
 
 
