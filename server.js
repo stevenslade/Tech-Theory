@@ -19,7 +19,7 @@ const hbs = exphbs.create({ helpers });
 
 //The addition of rolling:true and maxAge was meant to casue the cookie to expire after idel and it is working, 30000 equals 30 seconds, 300000 equals five minutes.  But nothing happens after the time interval, its just that if you try to do something it takes you back to a login screen
 const sess = {
-  secret: process.env.DB_SESSPASS,
+  secret: 'Super secret secret', //process.env.DB_SESSPASS,
   cookie: {
     maxAge: 300000
   },
