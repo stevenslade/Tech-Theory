@@ -2,7 +2,7 @@
   "name": "tech-theory",
   "version": "1.0.0",
   "description": "CMS style blog",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
