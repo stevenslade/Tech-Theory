@@ -17,15 +17,15 @@ const PORT = process.env.PORT || 3001;
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
-//The addition of rolling:true and maxAge was meant to casue the cookie to expire after idel and it is working, 30000 equals 30 seconds, 300000 equals five minutes.  But nothing happens after the time interval, its just that if you try to do something it takes you back to a login screen
+//The addition of rolling:true and maxAge was meant to cause the cookie to expire after idle and it is working, 30000 equals 30 seconds, 300000 equals five minutes.  But nothing happens after the time interval, its just that if you try to do something it takes you back to a login screen
 const sess = {
-  secret: 'Super secret secret', //process.env.DB_SESSPASS,
+  secret: process.env.DB_SESSPASS,
   cookie: {
-    maxAge: 300000
+   // maxAge: 300000
   },
   resave: false,
   saveUninitialized: true,
-  rolling: true,
+  //rolling: true,
   store: new SequelizeStore({
     db: sequelize
   })
